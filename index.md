@@ -25,6 +25,17 @@ li {
 
 <!-- TODO: Use [] instead of [][] for links for AOC and Project Euler -->
 <!-- TODO: Move or copy some of these notes to the relevant READMEs -->
+<!--
+userscripts
+daily tracker?? where was that repo
+other blind chess toys?
+calendar-todo??
+cb filter finder
+everlaw search keyboard controls
+anything from rosalind?
+Anything from daily programmer?
+-->
+
 
 ## 2021
 
