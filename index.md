@@ -64,7 +64,7 @@ Chess
 
 Other
 
-- **Drawing [stars] with HTML5 Canvas.** Fun fact: The aesthetically pleasing 7/3 star, used to great effectt in Game of Thrones, has a smaller 7/2 star inside it.
+- **Drawing [stars] with HTML5 Canvas.** Fun fact: The aesthetically pleasing 7/3 star, used to great effect in Game of Thrones, has a smaller 7/2 star inside it.
 - [Mirror piano]. (forked from [Fourhands by Jord Liu][fourhands]; no intent to merge upstream) Just a small change to a friend's open-source project results in a "mirror piano," where higher notes are on the left side, and lower notes are on the right.
 - ["Hard mode" for Set][set-hard-mode]. (forked from [Jacob Belanger][set-jacob]) [Set] is a card game that involves finding "sets" of three cards that are "all matching" or "all disjoint" on each of four features. As a beginner to the game, it's hard to see sets with many disjoint features. I made this project because I wanted to see if I could train myself to see these better by drilling them specifically, though I didn't end up using it much.
 - [Typeability]. Command-line visualization of how easy/hard it is to type some text in a given keyboard layout through the lens of "How many times do I need to use a finger twice in a row?"
