@@ -116,6 +116,33 @@ Other
 - strava userscript https://gist.github.com/prendradjaja/23601f807e8b1ea8cc02c4082758334f
 - toc-tracker
 
+<!--
+2019
+Bookworm
+Friendlog Web
+vimium fork https://github.com/prendradjaja/vimium – not intended to be merged
+bld-memo-trainer
+bad-scramble-generator
+
+2018
+friendlog
+hanglish-keyboard
+phoneme-frequencies
+git-commit-group
+
+2017
+draw-crossword
+stashtag
+git-antebase
+
+Older
+(2015) tmcat
+(2014) ebfpp
+(2013) vertigo.vim
+(2013) flatland
+(2009) Aerobash
+-->
+
 
 [crunchspace]: https://www.ocf.berkeley.edu/~prendra/crunchspace/
 [crunchspace-code]: https://github.com/prendradjaja/crunchspace
