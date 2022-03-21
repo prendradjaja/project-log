@@ -56,6 +56,7 @@ Chess
 
 [Advent of Code]\: Highlights
 
+- [AOC 2021.06][aoc-2021-06] "Lanternfish." ([solution][aoc-2021-06-soln]) Simulating populations exactly using matrix multiplication and exponentiation by squaring.
 - [AOC 2021.16][aoc-2021-16] "Packet Decoder." ([solution][aoc-2021-16-soln])
 - **[AOC 2021.19][aoc-2021-19] "Beacon Scanner."** ([solution][aoc-2021-19-soln]) 3D rotations.
 - [AOC 2021.20][aoc-2021-20] "Trench Map." ([solution][aoc-2021-20-soln]) Cellular automata with a twist.
@@ -162,6 +163,7 @@ Older
 [pchess]: https://github.com/prendradjaja/pchess
 
 [advent of code]: https://adventofcode.com/
+[aoc-2021-06]: https://adventofcode.com/2021/day/6
 [aoc-2021-16]: https://adventofcode.com/2021/day/16
 [aoc-2021-17]: https://adventofcode.com/2021/day/17
 [aoc-2021-18]: https://adventofcode.com/2021/day/18
@@ -172,6 +174,7 @@ Older
 [aoc-2021-23]: https://adventofcode.com/2021/day/23
 [aoc-2021-24]: https://adventofcode.com/2021/day/24
 [aoc-2021-25]: https://adventofcode.com/2021/day/25
+[aoc-2021-06-soln]: https://github.com/prendradjaja/advent-of-code-2021/tree/main/06--lanternfish.fastexp
 [aoc-2021-16-soln]: https://github.com/prendradjaja/advent-of-code-2021/tree/main/16--packet-decoder
 [aoc-2021-19-soln]: https://github.com/prendradjaja/advent-of-code-2021/tree/19/19--DONTEDIT
 [aoc-2021-20-soln]: https://github.com/prendradjaja/advent-of-code-2021/tree/main/20--trench-map
