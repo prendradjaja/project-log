@@ -37,7 +37,7 @@ Anything from daily programmer?
 <h2 id="section">2021</h2>
 <p>Highlights</p>
 <ul>
-<li><strong><a href="https://www.ocf.berkeley.edu/~prendra/crunchspace/">Crunchspace</a>.</strong> (<a href="https://github.com/prendradjaja/crunchspace">code</a>) Clone of an old Flash game <code>copter.swf</code>. Made for Crunchbase hackathon. Phaser.</li>
+<li><strong><a href="https://www.ocf.berkeley.edu/~prendra/crunchspace/">Crunchspace</a>.</strong> (<a href="https://github.com/prendradjaja/crunchspace">code</a>) Clone of an old Flash game <code>copter.swf</code>. Made for Crunchbase hackathon. Used Phaser. Possible improvement: I was hoping to have deterministic physics / <a href="https://gafferongames.com/post/fix_your_timestep/">fixed timestep</a>, but didn’t have enough time.</li>
 </ul>
 <p>Rubik’s cube</p>
 <ul>
@@ -46,7 +46,7 @@ Anything from daily programmer?
 </ul>
 <p>Chess</p>
 <ul>
-<li><strong><a href="https://github.com/yagu0/vchess/pull/17">Remarkable Rookies</a></strong> implementation for the open-source site <a href="https://vchess.club/">vchess</a>. The Remarkable Rookies are one of three alternate armies for Ralph Betza’s <a href="https://en.wikipedia.org/wiki/Chess_with_different_armies">Chess With Different Armies</a>. Sadly, my pull request was not merged because it instead inspired the creator of vchess to implement CWDA himself :) <!-- - chess engine TODO put it on github --></li>
+<li><strong><a href="https://github.com/yagu0/vchess/pull/17">Remarkable Rookies</a></strong> implementation for the open-source site <a href="https://vchess.club/">vchess</a>. The Remarkable Rookies are one of three alternate armies for Ralph Betza’s <a href="https://en.wikipedia.org/wiki/Chess_with_different_armies">Chess With Different Armies</a>. Sadly, my pull request was not merged because it instead inspired the creator of vchess to implement the rest of CWDA himself :) <!-- - chess engine TODO put it on github --></li>
 <li><a name="pchess"></a> <a href="https://github.com/prendradjaja/pchess">pchess</a>. Chess move generator (i.e. an implementation of the rules of chess). Incomplete.</li>
 </ul>
 <p><a href="https://adventofcode.com/">Advent of Code</a>: Highlights</p>
@@ -59,7 +59,7 @@ Anything from daily programmer?
 <li><a href="https://adventofcode.com/2021/day/24">AOC 2021.24</a> “Arithmetic Logic Unit.” (<a href="https://github.com/prendradjaja/advent-of-code-2021/tree/24/24--arithmetic-logic-unitt">solution</a>)</li>
 <li><a href="https://adventofcode.com/2021/day/25">AOC 2021.25</a> “Sea Cucumber.” (<a href="https://adventofcode.com/2021/leaderboard/day/25">star 2 leaderboard #55</a>) <!-- TODO put solution online --></li>
 </ul>
-<p><a href="https://projecteuler.net/">Project Euler</a>: Highlights and backtracking search</p>
+<p><a href="https://projecteuler.net/">Project Euler</a> highlights / Backtracking search</p>
 <ul>
 <li><a href="https://projecteuler.net/problem=60">PE60</a> “Prime pair sets.” (<a href="https://github.com/prendradjaja/euler100/tree/master/060--prime-pair-sets">solution</a>) This is the <a href="https://en.wikipedia.org/wiki/Clique_problem">clique problem</a>.</li>
 <li><strong><a href="https://projecteuler.net/problem=61">PE61</a> “Cyclical figurate numbers.”</strong> (<a href="https://github.com/prendradjaja/euler100/tree/master/061--cyclic-figurate">solution</a>) Reinvented <a href="https://en.wikipedia.org/wiki/Backtracking">backtracking</a> thanks to this problem! Now I grok it so much better. This got me started on a handful of other backtrackable problems…</li>
@@ -80,31 +80,31 @@ Anything from daily programmer?
 <h2 id="section-1">2020</h2>
 <p>Rubik’s cube: keycube and variations</p>
 <ul>
-<li><a name="keycube"></a> <strong><a href="https://prendradjaja.github.io/keycube/">keycube</a>.</strong> (<a href="https://github.com/prendradjaja/keycube">code</a>) Keyboard-controlled Rubik’s cube sim. Existing cube sims often use transparency or other tricks to allow you to see e.g. some of the back of the cube. This is unrealistic, though done for good reason. <strong>Novel idea:</strong> Show only what is visible from the top right corner or the top left corner (these are the two angles we normally see in real life, and we have to choose which we’re facing at any time), allowing the user to switch between the two views with a keypress. <strong>Pro:</strong> Somewhat more realistic piece knowledge when solving. <strong>Con:</strong> Additional keypresses needed. <strong>Possible future work:</strong> Animated turns would make it easier to track pieces while solving. For simplicity, I rendered the cube with 2D graphics, but animation would require a proper 3D cube.</li>
+<li><a name="keycube"></a> <strong><a href="https://prendradjaja.github.io/keycube/">keycube</a>.</strong> (<a href="https://github.com/prendradjaja/keycube">code</a>) Keyboard-controlled Rubik’s cube sim. Existing cube sims often use transparency or other tricks to allow you to see e.g. some of the back of the cube. This is unrealistic, though done for good reason. <strong>Novel idea:</strong> Show only what is visible from the top right corner or the top left corner (these are the two angles we normally see in real life, and we have to choose which we’re facing at any time), allowing the user to switch between the two views with a keypress. <strong>Pro:</strong> Somewhat more realistic piece knowledge when solving. <strong>Con:</strong> Additional keypresses needed. <strong>Possible improvement:</strong> Animated turns would make it easier to track pieces while solving. For simplicity, I rendered the cube with 2D graphics, but animation would require a proper 3D cube.</li>
 <li><a href="https://prendradjaja.github.io/keycube-experimental/x/eocube/">eocube</a>. Cube sim for exploring the concept of <a href="https://www.speedsolving.com/wiki/index.php/Edge_Orientation">edge orientation</a>. An actual cube with all its pieces and colors is not shown; it is abstracted to just edges and their orientations.</li>
 <li><a href="https://prendradjaja.github.io/keycube-experimental/x/ascii/">asciicube</a>. ASCII art cube sim. <!-- - TODO 1x2x3? https://github.com/prendradjaja/keycube/pull/13 --> <!-- - TODO double-vision? --></li>
 </ul>
 <p>Rubik’s cube: 3style and other</p>
 <ul>
 <li><a href="https://github.com/prendradjaja/3style-comm-drills">3style-comm-drills</a>. Generates drills (as described by <a href="https://www.youtube.com/watch?v=ciH9l6GNk4w">Bertie Longden</a>) for learning <a href="https://www.speedsolving.com/wiki/index.php/Beyer-Hardwick_Method">3-Style</a>. BYOC (bring your own comms)</li>
-<li><a href="https://github.com/prendradjaja/letter-pair-trainer-cli">letter-pair-trainer</a></li>
-<li><a href="https://github.com/prendradjaja/solve-time-graph">solve-time-graph</a></li>
+<li><a href="https://github.com/prendradjaja/letter-pair-trainer-cli">letter-pair-trainer</a>.</li>
+<li><a href="https://github.com/prendradjaja/solve-time-graph">solve-time-graph</a>.</li>
 </ul>
 <p><a href="https://adventofcode.com/">Advent of Code</a> (<a href="https://adventofcode.com/2020/leaderboard">2020 leaderboard #71</a>): Highlights and inspired by</p>
 <ul>
 <li><strong><a href="https://adventofcode.com/2020/day/18">AOC 2020.18</a> “Operation Order.”</strong> (<a href="https://github.com/prendradjaja/advent-of-code-2020/tree/master/18--operation-order">solution</a>) Inspired a <a href="https://github.com/prendradjaja/ast-lnl">lunch-n-learn</a>.</li>
 <li><strong><a href="https://adventofcode.com/2020/day/20">AOC 2020.20</a> “Jurassic Jigsaw.”</strong> (<a href="https://github.com/prendradjaja/advent-of-code-2020/tree/master/20--jurassic-jigsaw">solution</a>)</li>
-<li>AOC 2019.{2,5,7,9} “Intcode”</li>
-<li>assembler https://gist.github.com/prendradjaja/5392d3cf8faee4738dd511c2f0683391</li>
-<li><strong>speedcoding-tool</strong></li>
+<li><a href="https://adventofcode.com/2019">AOC 2019</a>.{2,5,7,9} “Intcode.” (<a href="https://github.com/prendradjaja/intcode-aoc-2019">solutions</a>)</li>
+<li><a href="https://gist.github.com/prendradjaja/5392d3cf8faee4738dd511c2f0683391">Assembly language &amp; assembler for Intcode</a>.</li>
+<li><strong><a href="https://github.com/prendradjaja/speedcoding-tool">Live-preview speedcoding tool for Python</a>.</strong></li>
 </ul>
 <p>Other</p>
 <ul>
-<li><strong>covid-dashboard</strong></li>
-<li><strong>just intonation toy</strong> https://gist.github.com/prendradjaja/2f29d8fb14764588da71c83a06bc74d8</li>
-<li>sleep-tracker</li>
-<li>strava userscript https://gist.github.com/prendradjaja/23601f807e8b1ea8cc02c4082758334f</li>
-<li>toc-tracker</li>
+<li><strong><a href="https://github.com/prendradjaja/covid-dashboard">Simple dashboard for COVID-19 data</a>.</strong> Customizable via URL params, which spawned a <a href="https://github.com/prendradjaja/url-editor">URL editor</a>.</li>
+<li><strong><a href="https://gist.github.com/prendradjaja/2f29d8fb14764588da71c83a06bc74d8">A small toy</a> for playing with <a href="https://en.wikipedia.org/wiki/Just_intonation">just intonation</a>.</strong></li>
+<li><a href="https://github.com/prendradjaja/sleep-tracker">Sleep tracker</a>.</li>
+<li>Strava <a href="https://gist.github.com/prendradjaja/23601f807e8b1ea8cc02c4082758334f">userscript</a> for calculating cumulative time across splits.</li>
+<li><a href="https://github.com/prendradjaja/toc-tracker">toc-tracker</a>.</li>
 </ul>
 <!--
 2019
@@ -132,3 +132,4 @@ Older
 (2013) flatland
 (2009) Aerobash
 -->
+<p></p>

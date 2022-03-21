@@ -41,7 +41,7 @@ Anything from daily programmer?
 
 Highlights
 
-- **[Crunchspace][crunchspace].** ([code][crunchspace-code]) Clone of an old Flash game `copter.swf`. Made for Crunchbase hackathon. Phaser.
+- **[Crunchspace][crunchspace].** ([code][crunchspace-code]) Clone of an old Flash game `copter.swf`. Made for Crunchbase hackathon. Used Phaser. Possible improvement: I was hoping to have deterministic physics / [fixed timestep], but didn't have enough time.
 
 Rubik's cube
 
@@ -50,7 +50,7 @@ Rubik's cube
 
 Chess
 
-- **[Remarkable Rookies][cwda-code]** implementation for the open-source site [vchess]. The Remarkable Rookies are one of three alternate armies for Ralph Betza's [Chess With Different Armies][cwda-wiki]. Sadly, my pull request was not merged because it instead inspired the creator of vchess to implement CWDA himself :)
+- **[Remarkable Rookies][cwda-code]** implementation for the open-source site [vchess]. The Remarkable Rookies are one of three alternate armies for Ralph Betza's [Chess With Different Armies][cwda-wiki]. Sadly, my pull request was not merged because it instead inspired the creator of vchess to implement the rest of CWDA himself :)
 <!-- - chess engine TODO put it on github -->
 - <a name="pchess"></a> [pchess]. Chess move generator (i.e. an implementation of the rules of chess). Incomplete.
 
@@ -64,7 +64,7 @@ Chess
 - [AOC 2021.24][aoc-2021-24] "Arithmetic Logic Unit." ([solution][aoc-2021-24-soln])
 - [AOC 2021.25][aoc-2021-25] "Sea Cucumber." ([star 2 leaderboard #55][aoc-2021-leaderboard]) <!-- TODO put solution online -->
 
-[Project Euler]\: Highlights and backtracking search
+[Project Euler] highlights / Backtracking search
 
 - [PE60][euler-60] "Prime pair sets." ([solution][euler-60-soln]) This is the [clique problem][cliques].
 - **[PE61][euler-61] "Cyclical figurate numbers."** ([solution][euler-61-soln]) Reinvented [backtracking] thanks to this problem! Now I grok it so much better. This got me started on a handful of other backtrackable problems...
@@ -88,7 +88,7 @@ Other
 Rubik's cube: keycube and variations
 
 - <a name="keycube"></a> **[keycube].** ([code][keycube-code])
-Keyboard-controlled Rubik's cube sim. Existing cube sims often use transparency or other tricks to allow you to see e.g. some of the back of the cube. This is unrealistic, though done for good reason. **Novel idea:** Show only what is visible from the top right corner or the top left corner (these are the two angles we normally see in real life, and we have to choose which we're facing at any time), allowing the user to switch between the two views with a keypress. **Pro:** Somewhat more realistic piece knowledge when solving. **Con:** Additional keypresses needed. **Possible future work:** Animated turns would make it easier to track pieces while solving. For simplicity, I rendered the cube with 2D graphics, but animation would require a proper 3D cube.
+Keyboard-controlled Rubik's cube sim. Existing cube sims often use transparency or other tricks to allow you to see e.g. some of the back of the cube. This is unrealistic, though done for good reason. **Novel idea:** Show only what is visible from the top right corner or the top left corner (these are the two angles we normally see in real life, and we have to choose which we're facing at any time), allowing the user to switch between the two views with a keypress. **Pro:** Somewhat more realistic piece knowledge when solving. **Con:** Additional keypresses needed. **Possible improvement:** Animated turns would make it easier to track pieces while solving. For simplicity, I rendered the cube with 2D graphics, but animation would require a proper 3D cube.
 - [eocube]. Cube sim for exploring the concept of [edge orientation]. An actual cube with all its pieces and colors is not shown; it is abstracted to just edges and their orientations.
 - [asciicube]. ASCII art cube sim.
 <!-- - TODO 1x2x3? https://github.com/prendradjaja/keycube/pull/13 -->
@@ -97,24 +97,24 @@ Keyboard-controlled Rubik's cube sim. Existing cube sims often use transparency 
 Rubik's cube: 3style and other
 
 - [3style-comm-drills]. Generates drills (as described by [Bertie Longden]) for learning [3-Style]. BYOC (bring your own comms)
-- [letter-pair-trainer]
-- [solve-time-graph]
+- [letter-pair-trainer].
+- [solve-time-graph].
 
 [Advent of Code] ([2020 leaderboard #71][aoc-2020-leaderboard]): Highlights and inspired by
 
 - **[AOC 2020.18] "Operation Order."** ([solution][aoc-2020-18-soln]) Inspired a [lunch-n-learn][lnl-asts].
 - **[AOC 2020.20] "Jurassic Jigsaw."** ([solution][aoc-2020-20-soln])
-- AOC 2019.{2,5,7,9} "Intcode"
-- assembler https://gist.github.com/prendradjaja/5392d3cf8faee4738dd511c2f0683391
-- **speedcoding-tool**
+- [AOC 2019].{2,5,7,9} "Intcode." ([solutions][intcode-soln])
+- [Assembly language & assembler for Intcode][intcode-assembly].
+- **[Live-preview speedcoding tool for Python][speedcoding-tool].**
 
 Other
 
-- **covid-dashboard**
-- **just intonation toy** https://gist.github.com/prendradjaja/2f29d8fb14764588da71c83a06bc74d8
-- sleep-tracker
-- strava userscript https://gist.github.com/prendradjaja/23601f807e8b1ea8cc02c4082758334f
-- toc-tracker
+- **[Simple dashboard for COVID-19 data][covid-dashboard].** Customizable via URL params, which spawned a [URL editor].
+- **[A small toy][just-intonation-toy] for playing with [just intonation].**
+- [Sleep tracker].
+- Strava [userscript][strava-cumultime] for calculating cumulative time across splits.
+- [toc-tracker].
 
 <!--
 2019
@@ -143,6 +143,8 @@ Older
 (2009) Aerobash
 -->
 
+
+
 
 [crunchspace]: https://www.ocf.berkeley.edu/~prendra/crunchspace/
 [crunchspace-code]: https://github.com/prendradjaja/crunchspace
@@ -228,4 +230,18 @@ Older
 [aoc 2020.20]: https://adventofcode.com/2020/day/20
 [aoc-2020-18-soln]: https://github.com/prendradjaja/advent-of-code-2020/tree/master/18--operation-order
 [aoc-2020-20-soln]: https://github.com/prendradjaja/advent-of-code-2020/tree/master/20--jurassic-jigsaw
+[aoc 2019]: https://adventofcode.com/2019
+[intcode-soln]: https://github.com/prendradjaja/intcode-aoc-2019
+[intcode-assembly]: https://gist.github.com/prendradjaja/5392d3cf8faee4738dd511c2f0683391
 [lnl-asts]: https://github.com/prendradjaja/ast-lnl
+[speedcoding-tool]: https://github.com/prendradjaja/speedcoding-tool
+
+[covid-dashboard]: https://github.com/prendradjaja/covid-dashboard
+[url editor]: https://github.com/prendradjaja/url-editor
+[just-intonation-toy]: https://gist.github.com/prendradjaja/2f29d8fb14764588da71c83a06bc74d8
+[just intonation]: https://en.wikipedia.org/wiki/Just_intonation
+[sleep tracker]: https://github.com/prendradjaja/sleep-tracker
+[strava-cumultime]: https://gist.github.com/prendradjaja/23601f807e8b1ea8cc02c4082758334f
+[toc-tracker]: https://github.com/prendradjaja/toc-tracker
+
+[fixed timestep]: https://gafferongames.com/post/fix_your_timestep/
